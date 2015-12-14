@@ -166,7 +166,7 @@ class Util implements TaggingUtility
 
 		if(!$tag) {
 			$tag = new $model;
-			$tag->name = $tagString;
+			$tag->name = $tagSlug;
 			$tag->slug = $tagSlug;
 			$tag->suggest = false;
 			$tag->save();
